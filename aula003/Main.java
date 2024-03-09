@@ -27,10 +27,11 @@ public class Main {
             currentNumber = Float.parseFloat(num);
             if (currentNumber != 9999) {
                 contador++;
-                somaNum = somaNum + currentNumber;
-                media = somaNum / contador;   
+                somaNum = somaNum + currentNumber;   
             }
-        } 
+        }
+        media = somaNum / contador;
+        JOptionPane.showMessageDialog(null, media);
     }
 
     public static void main() {
