@@ -1,7 +1,6 @@
-package aulas.aula002;
 import javax.swing.JOptionPane;
 
-public class Main {
+public class aula02 {
     
     public static void ex01a() {
         int quantIrmaos = 3;
