@@ -111,7 +111,7 @@ public class extras {
         int fid2 = 173;
 
         int diaria1;
-        int diaria2; 
+        int diaria2;
     }
 
     public static void main(String[] args) {

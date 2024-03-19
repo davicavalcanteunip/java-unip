@@ -1,5 +1,5 @@
 public class aula01 {
-    
+
     public static void ex01() {
         System.out.println("Davi\n25/02/2005\nRua São João, 950\nGoiânia\n");
     }
