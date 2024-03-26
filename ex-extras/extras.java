@@ -289,11 +289,6 @@ public class extras {
             senhas[c] = novaSenha;
         }
 
-        // for (int c = 0; c < 2; c++) {
-        //     int admin = c + 1;
-        //     JOptionPane.showMessageDialog(null, "Essa é a senha do administrador " + admin + ": " + senhas[c]);
-        // }
-
         String logar = JOptionPane.showInputDialog("Deseja realizar login: [SIM | NÃO]");
 
         String usuarioLogin = "";
@@ -306,11 +301,10 @@ public class extras {
                 if (usuarios[c].equals(usuarioLogin) && senhas[c].equals(senhaLogin)) {
                     JOptionPane.showMessageDialog(null, "Login realizado com sucesso!");
                     break;
-                } else {
-                    JOptionPane.showMessageDialog(null, "Usuário ou senha incorretos!");
-                    break;
                 }
             }
+
+            JOptionPane.showInputDialog("Usuário ou senha incorreto!");
         }
     }
 
