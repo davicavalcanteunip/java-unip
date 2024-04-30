@@ -279,16 +279,32 @@ public class extras {
     }
 
     public static void ex11() {
-        String senhas[] = new String[5];
+        String usuarios[] = new String[2];
+        String senhas[] = new String[2];
 
-        for (int c = 0; c < 5; c++) {
+        for (int c = 0; c < 2; c++) {
+            String novoUsuario = JOptionPane.showInputDialog("Digite o seu usuário");
             String novaSenha = JOptionPane.showInputDialog("Digite a sua senha de administrador");
+            usuarios[c] = novoUsuario;
             senhas[c] = novaSenha;
         }
 
-        for (int c = 0; c < 5; c++) {
-            int admin = c + 1;
-            JOptionPane.showMessageDialog(null, "Essa é a senha do administrador " + admin + ": " + senhas[c]);
+        String logar = JOptionPane.showInputDialog("Deseja realizar login: [SIM | NÃO]");
+
+        String usuarioLogin = "";
+        String senhaLogin = "";
+
+        if (logar.equals("SIM")) {
+            usuarioLogin = JOptionPane.showInputDialog("Digite o seu nome de usuário!");
+            senhaLogin = JOptionPane.showInputDialog("Digite a senha");
+            for (int c = 0; c < 2; c++) {
+                if (usuarios[c].equals(usuarioLogin) && senhas[c].equals(senhaLogin)) {
+                    JOptionPane.showMessageDialog(null, "Login realizado com sucesso!");
+                    break;
+                }
+            }
+
+            JOptionPane.showInputDialog("Usuário ou senha incorreto!");
         }
     }
 
